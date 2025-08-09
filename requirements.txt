@@ -1,6 +1,7 @@
 # Core
 fastapi
 uvicorn[standard]
+Jinja2Templates
 
 # Authentication
 passlib[bcrypt]
