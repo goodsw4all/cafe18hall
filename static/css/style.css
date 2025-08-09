@@ -9,7 +9,7 @@ body {
 body {
     font-family: "Malgun Gothic", "맑은 고딕", 'Ubuntu Mono', monospace, -apple-system, BlinkMacSystemFont, sans-serif;
     padding-top: 40px;
-    margin: 0;
+    margin: 0; 
     background-color: #FFFFFF;
 }
 
@@ -35,6 +35,10 @@ body {
 
 .title a:hover {
     text-decoration: underline;
+}
+
+.phone-and-instagram {
+    display: inline;
 }
 
 .main-content {
@@ -85,7 +89,7 @@ td {
     border: 1px solid #000;
     padding: 0;
     text-align: center;
-    /* height: 50px; */ /* 동적 높이 조절을 위해 고정 높이 제거 */
+    height: 50px;
     box-sizing: border-box;
     background-color: #fff;
 }
@@ -100,10 +104,10 @@ th {
     /* display: flex; */
     align-items: center;
     justify-content: center;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     height: 60px;
-    line-height: 65px;
-    /* padding: 1 12px; */
+    line-height: 60px;
+    padding: 0 12px;
 }
 
 .total-score-header,
@@ -149,22 +153,11 @@ th {
 }
 
 /* 반응형 스타일 */
-@media (max-width: 768px) {
-    
-
-    .title {
-        font-size: 20px;
-    }
-
-    .container {
-        padding: 15px;
-    }
+@media (max-width: 1024px) {    
 }
 
-@media (max-width: 480px) {
-    .title {
-        font-size: 18px;
-    }
+@media (max-width: 768px) {    
+    .phone-and-instagram {
+        display: block;
+    } 
 }
-
-
