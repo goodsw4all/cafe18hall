@@ -6,6 +6,9 @@ https://cafe18hall.vercel.app
 FastAPI와 순수 JavaScript(Vanilla JS)를 사용하여 개발된 직관적인 실시간 미니골프 점수판 웹 애플리케이션입니다.
 사용자는 웹 브라우저를 통해 간편하게 미니골프 점수를 기록하고, 모든 플레이어의 점수 현황과 총점을 실시간으로 확인할 수 있습니다.
 
+![Mini Golf Scoreboard Screenshot](static/images/ScreenShot-mini-golf-score.png)
+
+
 ## ✨ 주요 기능
 
 - **플레이어 관리:**
