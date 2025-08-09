@@ -1,0 +1,170 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Malgun Gothic", "맑은 고딕", 'Ubuntu Mono', monospace, -apple-system, BlinkMacSystemFont, sans-serif;
+    padding-top: 40px;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    background-color: #fff;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.title a {
+    text-decoration: none;
+    color: #E1306C;
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.scoreboard-wrapper {
+    display: flex;
+    overflow: hidden; /* Ensure no extra scrollbars from children */
+    border: none;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.fixed-columns-container {
+    flex-shrink: 0; /* Prevent shrinking */
+    background-color: #fff;
+    z-index: 2; /* Ensure it stays on top of the scrollable content */
+}
+
+.scrollable-scores-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */    
+    min-width: 0; /* Allow container to shrink */
+}
+
+.rules-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu Mono', monospace;
+    width: max-content;
+    white-space: nowrap;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 0;
+    text-align: center;
+    /* height: 50px; */ /* 동적 높이 조절을 위해 고정 높이 제거 */
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+th {
+    height: 45px; /* 헤더 높이 고정 */
+}
+
+.player-name-header,
+.player-name {
+    width: 77px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* box-sizing: border-box; */
+    height: 60px;
+    line-height: 65px;
+    /* padding: 1 12px; */
+}
+
+.total-score-header,
+.total-score {
+    width: 60px;
+    padding: 8px 12px;
+    vertical-align: middle;
+    height: 60px;
+}
+
+.score-cell {
+    padding: 0;
+    height: 60px;
+    width: 50px;
+}
+
+.score-plus,
+.score-minus {
+    height: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative; /* 기호 위치의 기준점 */
+    text-align: center; /* 숫자 가운데 정렬 */
+    line-height: 25px; /* 숫자 세로 중앙 정렬 */
+}
+
+.score-plus {
+    border-bottom: 1px solid #ccc;
+}
+
+.score-plus::before {
+    content: '+';
+    color: #007bff;
+    position: absolute; /* 절대 위치로 고정 */
+    left: 5px; /* 왼쪽에서 5px 위치 */
+}
+
+.score-minus::before {
+    content: '-';
+    color: #dc3545;
+    position: absolute; /* 절대 위치로 고정 */
+    left: 5px; /* 왼쪽에서 5px 위치 */
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    
+
+    .title {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 18px;
+    }
+}
+
+

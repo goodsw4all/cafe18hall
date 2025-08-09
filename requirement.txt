@@ -1,0 +1,7 @@
+# Core
+fastapi
+uvicorn[standard]
+
+# Authentication
+passlib[bcrypt]
+python-jose[cryptography]
