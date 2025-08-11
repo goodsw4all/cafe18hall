@@ -13,7 +13,7 @@ templates = Jinja2Templates(directory="templates")
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    player_names = [f"골퍼{i}" for i in range(1, 7)]
+    player_names = ["이름입력" for i in range(1, 7)]
     players = []
     for name in player_names:
         players.append({
