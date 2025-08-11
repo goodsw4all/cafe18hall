@@ -1,9 +1,10 @@
 # ⛳ 실시간 미니골프 스코어보드 웹앱
 
 1963년 개장 속초보광미니골프장의 스코어보드를 참고하여 개발된 웹 애플리케이션입니다.
+
+![QR Code to Live App](static/images/QR-mini-golf-score.png) <br>
 https://cafe18hall.vercel.app
 
-![QR Code to Live App](static/images/QR-mini-golf-score.png)
 
 FastAPI와 순수 JavaScript(Vanilla JS)를 사용하여 개발된 직관적인 실시간 미니골프 점수판 웹 애플리케이션입니다.
 사용자는 웹 브라우저를 통해 간편하게 미니골프 점수를 기록하고, 모든 플레이어의 점수 현황과 총점을 실시간으로 확인할 수 있습니다.
