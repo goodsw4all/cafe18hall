@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const fixedRow = fixedRows[index];
         if (fixedRow) {
           // Reset Name
-          fixedRow.querySelector(".player-name").textContent = "이름 입력";
+          fixedRow.querySelector(".player-name").textContent = "이름입력";
           updateTotalScore(row, fixedRow);
         }
       });
